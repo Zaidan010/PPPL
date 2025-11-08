@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CleanSound - Event & Video Responsif</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cs-yellow': '#FFD700', 
+                        'cs-purple': '#800080',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <div class="max-w-6xl mx-auto p-4 md:p-8">
+
+      <header class="flex flex-col sm:flex-row justify-between items-center py-4 border-b border-gray-200 space-y-4 sm:space-y-0">
+      <div class="flex items-center space-x-2">
+        <div class="bg-cs-purple text-white text-2xl font-bold px-2 py-1 rounded-md shadow-md">CS</div>
+      </div>
+
+      <nav class="relative">
+    <div class="hidden lg:flex flex-wrap justify-start gap-4">
+        <button class="bg-white text-gray-700 text-sm font-semibold px-4 py-2 rounded-lg border border-gray-300 shadow-sm transition duration-300 hover:bg-black hover:text-white hover:shadow-lg">Anime</button>
+        <button class="bg-white text-gray-700 text-sm font-semibold px-4 py-2 rounded-lg border border-gray-300 shadow-sm transition duration-300 hover:bg-black hover:text-white hover:shadow-lg">Game</button>
+        <button class="bg-white text-gray-700 text-sm font-semibold px-4 py-2 rounded-lg border border-gray-300 shadow-sm transition duration-300 hover:bg-black hover:text-white hover:shadow-lg">Geek</button>
+        <button class="bg-white text-gray-700 text-sm font-semibold px-4 py-2 rounded-lg border border-gray-300 shadow-sm transition duration-300 hover:bg-black hover:text-white hover:shadow-lg">Event</button>
+    </div>
+
+    <div class="flex lg:hidden justify-end">
+        <button id="mobile-menu-button" class="p-2 text-gray-700 border border-gray-300 rounded-lg hover:bg-gray-100 focus:outline-none">
+            <svg id="menu-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+            <svg id="menu-icon-close" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+    </div>
+
+    <div id="mobile-menu-dropdown" class="hidden lg:hidden absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-200">
+        <a href="#" class="block px-4 py-2 text-sm text-gray-700 font-bold hover:bg-gray-500 hover:text-white hover:font-bold">Anime</a>
+        <a href="#" class="block px-4 py-2 text-sm text-gray-700 font-bold hover:bg-gray-500 hover:text-white hover:font-bold">Game</a>
+        <a href="#" class="block px-4 py-2 text-sm text-gray-700 font-bold hover:bg-gray-500 hover:text-white hover:font-bold">Geek</a>
+        <a href="#" class="block px-4 py-2 text-sm text-gray-700 font-bold hover:bg-gray-500 hover:text-white hover:font-bold">Event</a>
+    </div>
+</nav>
+
+        
+    </header>
+
+
+        <main class="mt-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
+            
+            <section class="lg:col-span-2 space-y-8">
+                
+                <div class="relative bg-white rounded-lg shadow-xl overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1517457375865-9a67a0da7478?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Event CleanSound" class="w-full h-64 md:h-96 object-cover">
+                    <div class="absolute bottom-0 left-0 bg-transparent p-3 m-3 md:p-4 md:m-4 rounded-md text-white">
+                        <span class="text-xs font-bold bg-gray-100 text-black px-2 py-1 rounded-full">
+                            <a href="">Event</a>
+                        </span>
+                        <h2 class="text-xl md:text-2xl font-bold mt-1 text-gray-200">Lorem Ipsum Event Title</h2>
+                        <p class="text-xs md:text-sm text-gray-200">Lorem ipsum</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 bg-white">
+    
+                <div class="md:col-span-2 bg-white rounded-lg shadow-lg overflow-hidden border-4 ">
+                    <div class="relative pt-[56.25%]"> <iframe
+                            class="absolute top-0 left-0 w-full h-full rounded-md"
+                            src="https://www.youtube.com/embed/bnsKXB_5YIY" 
+                            title="The CUTEST flower girl on YouTube (2019-2024)" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+
+                <div class="bg-yellow-300 p-6 rounded-lg shadow-lg flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold">Video Terbaru</h3>
+                        <p class="text-sm mt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    
+                    <a href="#" class="text-sm text-black font-semibold mt-4 block border-b border-black w-max self-end md:self-auto">See more on our channel</a>
+                </div>
+            </div>
+
+            </section>
+
+     <aside class="lg:col-span-1 bg-transparent border-solid rounded-md p-6 border-gray-300 shadow-xl">
+        <h3 class="text-xl font-bold text-gray-800 mb-4">Top 5 Music of The Month</h3>
+        <p class="text-sm text-gray-500 mb-4">Lagu di community CleanSound</p>
+        <div class="space-y-4">
+        <a href="https://open.spotify.com/track/6Uqf5o4rXzP5nK6m4j7B2y" target="_blank" class="flex items-center justify-between p-2 rounded-lg hover:bg-gray-100 cursor-pointer">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-blue-400 rounded-md shrink-0"></div>
+                <div>
+                    <p class="font-semibold text-gray-800">晴る</p>
+                    <p class="text-sm text-gray-500">Yorushika</p>
+                </div>
+            </div>
+            <span class="text-sm text-gray-500">4:30</span>
+        </a>
+
+        <a href="https://lnk.to/ZTMY_Obenkyou" target="_blank" class="flex items-center justify-between p-2 rounded-lg hover:bg-gray-100 cursor-pointer">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-purple-600 rounded-md shrink-0"></div>
+                <div>
+                    <p class="font-semibold text-gray-800">お勉強しといてよ</p>
+                    <p class="text-sm text-gray-500">ZUTOMAYO</p>
+                </div>
+            </div>
+            <span class="text-sm text-gray-500">4:40</span>
+        </a>
+
+        <a href="https://spotify.link/owj6EEX2YXb" target="_blank" class="flex items-center justify-between p-2 rounded-lg hover:bg-gray-100 cursor-pointer">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-orange-500 rounded-md shrink-0"></div>
+                <div>
+                    <p class="font-semibold text-gray-800">Oz.</p>
+                    <p class="text-sm text-gray-500">yama</p>
+                </div>
+            </div>
+            <span class="text-sm text-gray-500">3:14</span>
+        </a>
+
+        <a href="https://ffm.to/reckless_strdl" target="_blank" class="flex items-center justify-between p-2 rounded-lg hover:bg-gray-100 cursor-pointer">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-pink-500 rounded-md shrink-0"></div>
+                <div>
+                    <p class="font-semibold text-gray-800">Reckless</p>
+                    <p class="text-sm text-gray-500">m-flo, Adee A.</p>
+                </div>
+            </div>
+            <span class="text-sm text-gray-500">3:07</span>
+        </a>
+
+        <a href="https://open.spotify.com/track/67x0b1k2H0vM4g2fB7S8yC" target="_blank" class="flex items-center justify-between p-2 rounded-lg hover:bg-gray-100 cursor-pointer">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-green-500 rounded-md shrink-0"></div>
+                <div>
+                    <p class="font-semibold text-gray-800">My Dearest</p>
+                    <p class="text-sm text-gray-500">supercell</p>
+                </div>
+            </div>
+            <span class="text-sm text-gray-500">5:38</span>
+        </a>
+        <a href="https://open.spotify.com/track/67x0b1k2H0vM4g2fB7S8yC" target="_blank" class="flex items-center justify-between p-2 rounded-lg hover:bg-gray-100 cursor-pointer">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-red-500 rounded-md shrink-0"></div>
+                <div>
+                    <p class="font-semibold text-gray-800">Distance</p>
+                    <p class="text-sm text-gray-500">Rie Murakawa</p>
+                </div>
+            </div>
+            <span class="text-sm text-gray-500">3:39</span>
+        </a>
+    </div>
+
+    <p class="text-xs text-gray-400 mt-6 text-center border-t pt-4">
+        See more our playlist on 
+        <a href="LINK_PLAYLIST_SPOTIFY" target="_blank" class="text-green-500 font-semibold hover:underline">spotify</a>
+    </p>
+</aside>
+            
+        </main>
+        
+        
+
+        <section class="mt-12 space-y-12">
+            <div id="latest-anime">
+                <h2 class="text-2xl font-bold mb-6 text-gray-800">Latest Anime</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden"><div class="relative h-48 bg-gray-200"><img src="kowata_makoto.jpg" alt="Game Image 2" class="w-full h-full object-cover"><a href=""><div class="absolute bottom-0 left-0 bg-black bg-opacity-10 text-white p-2 rounded-md w-full hover:h-3/4"><div class="flex flex-col"><span class="text-xs font-bold bg-yellow-500 text-white px-2 py-1 rounded-full w-fit mb-1">ANIME</span><span class="font-semibold text-black">Judul Berita</span></div></div></div><div class="p-4"><p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div></div></a>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden"><div class="relative h-48 bg-gray-200"><img src="kowata_makoto.jpg" alt="Game Image 2" class="w-full h-full object-cover"><a href=""><div class="absolute bottom-0 left-0 bg-black bg-opacity-10 text-white p-2 rounded-md w-full hover:h-3/4"><div class="flex flex-col"><span class="text-xs font-bold bg-yellow-500 text-white px-2 py-1 rounded-full w-fit mb-1">ANIME</span><span class="font-semibold text-black">Judul Berita</span></div></div></div><div class="p-4"><p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div></div></a>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden"><div class="relative h-48 bg-gray-200"><img src="kowata_makoto.jpg" alt="Game Image 2" class="w-full h-full object-cover"><a href=""><div class="absolute bottom-0 left-0 bg-black bg-opacity-10 text-white p-2 rounded-md w-full hover:h-3/4"><div class="flex flex-col"><span class="text-xs font-bold bg-yellow-500 text-white px-2 py-1 rounded-full w-fit mb-1">ANIME</span><span class="font-semibold text-black">Judul Berita</span></div></div></div><div class="p-4"><p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div></div></a>
+                </div>
+                <div class="text-right mt-3 text-sm"><a href="#" class="text-gray-500 hover:text-black border-b border-gray-400">Read more</a></div>
+            </div>
+            <div id="latest-game">
+                <h2 class="text-2xl font-bold mb-6 text-gray-800">Latest Game</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden"><div class="relative h-48 bg-gray-200"><img src="kowata_makoto.jpg" alt="Game Image 2" class="w-full h-full object-cover"><a href=""><div class="absolute bottom-0 left-0 bg-black bg-opacity-10 text-white p-2 rounded-md w-full hover:h-3/4"><div class="flex flex-col"><span class="text-xs font-bold bg-blue-500 text-white px-2 py-1 rounded-full w-fit mb-1">ANIME</span><span class="font-semibold text-black">Judul Berita</span></div></div></div><div class="p-4"><p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div></div></a>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden"><div class="relative h-48 bg-gray-200"><img src="kowata_makoto.jpg" alt="Game Image 2" class="w-full h-full object-cover"><a href=""><div class="absolute bottom-0 left-0 bg-black bg-opacity-10 text-white p-2 rounded-md w-full hover:h-3/4"><div class="flex flex-col"><span class="text-xs font-bold bg-blue-500 text-white px-2 py-1 rounded-full w-fit mb-1">ANIME</span><span class="font-semibold text-black">Judul Berita</span></div></div></div><div class="p-4"><p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div></div></a>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden"><div class="relative h-48 bg-gray-200"><img src="kowata_makoto.jpg" alt="Game Image 2" class="w-full h-full object-cover"><a href=""><div class="absolute bottom-0 left-0 bg-black bg-opacity-10 text-white p-2 rounded-md w-full hover:h-3/4"><div class="flex flex-col"><span class="text-xs font-bold bg-blue-500 text-white px-2 py-1 rounded-full w-fit mb-1">ANIME</span><span class="font-semibold text-black">Judul Berita</span></div></div></div><div class="p-4"><p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div></div></a>
+                </div>
+                <div class="text-right mt-3 text-sm"><a href="#" class="text-gray-500 hover:text-black border-b border-gray-400">Read more</a></div>
+            </div>
+            <div id="latest-geek">
+                <h2 class="text-2xl font-bold mb-6 text-gray-800">Latest Game</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden"><div class="relative h-48 bg-gray-200"><img src="kowata_makoto.jpg" alt="Game Image 2" class="w-full h-full object-cover"><a href=""><div class="absolute bottom-0 left-0 bg-black bg-opacity-10 text-white p-2 rounded-md w-full hover:h-3/4"><div class="flex flex-col"><span class="text-xs font-bold bg-green-500 text-white px-2 py-1 rounded-full w-fit mb-1">ANIME</span><span class="font-semibold text-black">Judul Berita</span></div></div></div><div class="p-4"><p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div></div></a>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden"><div class="relative h-48 bg-gray-200"><img src="kowata_makoto.jpg" alt="Game Image 2" class="w-full h-full object-cover"><a href=""><div class="absolute bottom-0 left-0 bg-black bg-opacity-10 text-white p-2 rounded-md w-full hover:h-3/4"><div class="flex flex-col"><span class="text-xs font-bold bg-green-500 text-white px-2 py-1 rounded-full w-fit mb-1">ANIME</span><span class="font-semibold text-black">Judul Berita</span></div></div></div><div class="p-4"><p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div></div></a>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden"><div class="relative h-48 bg-gray-200"><img src="kowata_makoto.jpg" alt="Game Image 2" class="w-full h-full object-cover"><a href=""><div class="absolute bottom-0 left-0 bg-black bg-opacity-10 text-white p-2 rounded-md w-full hover:h-3/4"><div class="flex flex-col"><span class="text-xs font-bold bg-green-500 text-white px-2 py-1 rounded-full w-fit mb-1">ANIME</span><span class="font-semibold text-black">Judul Berita</span></div></div></div><div class="p-4"><p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div></div></a>
+                </div>
+                <div class="text-right mt-3 text-sm"><a href="#" class="text-gray-500 hover:text-black border-b border-gray-400">Read more</a></div>
+            </div>
+
+          
+        </section>
+
+    </div> 
+    ---
+
+    <footer class="bg-black text-white mt-12 py-8">
+        <div class="max-w-6xl mx-auto px-4 md:px-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            
+            <div class="flex flex-col sm:flex-row items-center space-x-0 sm:space-x-4 text-center sm:text-left">
+                <div class="bg-white text-cs-purple text-2xl font-bold px-2 py-1 rounded-md shadow-md mb-2 sm:mb-0">CS</div>
+                <div>
+                    <h3 class="text-xl font-bold text-cs-yellow">CLEANSOUND</h3>
+                    <p class="text-xs text-gray-400">Lorem ipsum</p>
+                </div>
+            </div>
+
+            <div class="flex space-x-6 text-2xl">
+                <a href="#" class="hover:text-cs-yellow"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07c3.275.148 4.793 1.666 4.94 4.94.057 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.148 3.276-1.666 4.793-4.94 4.94-.927.036-1.295.06-4.85.06s-3.923-.024-4.85-.06c-3.275-.148-4.793-1.666-4.94-4.94-.057-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.148-3.276 1.666-4.794 4.94-4.94.927-.036 1.295-.06 4.85-.06zm0 1.9c-3.111 0-3.58.014-4.854.072-2.316.104-3.411 1.21-3.515 3.515-.058 1.274-.072 1.743-.072 4.854 0 3.111.014 3.58.072 4.854.104 2.316 1.21 3.411 3.515 3.515 1.274.058 1.743.072 4.854.072s3.58-.014 4.854-.072c2.316-.104 3.411-1.21 3.515-3.515.058-1.274.072-1.743.072-4.854 0-3.111-.014-3.58-.072-4.854-.104-2.316-1.21-3.411-3.515-3.515-1.274-.058-1.743-.072-4.854-.072zM12 9a3 3 0 100 6 3 3 0 000-6zm0 1a2 2 0 110 4 2 2 0 010-4zm4.406-3.832a1 1 0 100 2 1 1 0 000-2z"/></svg></a>
+                <a href="#" class="hover:text-cs-yellow"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M21.543 6.495c-.195-.738-.76-.328-1.527-.478C18.268 5.768 15.01 5.5 12 5.5s-6.268.268-8.016.517c-.767.15-.432-.26-1.527.478C2 7.233 2 16.767 2.457 17.505c.195.738.76.328 1.527.478C5.732 18.232 8.99 18.5 12 18.5s6.268-.268 8.016-.517c.767-.15.432-.26 1.527-.478C22 16.767 22 7.233 21.543 6.495zM10 14.5v-5l5 2.5-5 2.5z"/></svg></a>
+                <a href="#" class="hover:text-cs-yellow"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M18.901 1.706h3.413L16.29 9.69L24 22.285h-6.218l-5.467-6.287L6.476 22.285H0L8.272 10.763L1.137 1.706h6.326l4.632 6.07L18.901 1.706zm-1.84 18.297l.872.24L7.15 3.363l-.872-.24 10.665 16.88z"/></svg></a>
+                <a href="#" class="hover:text-cs-yellow"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19.5 2.5c-.3 0-.5.2-.5.5v19c0 .3.2.5.5.5h.5c.3 0 .5-.2.5-.5V3c0-.3-.2-.5-.5-.5h-.5zm-4 0c-.3 0-.5.2-.5.5v11.5c0 .3.2.5.5.5h.5c.3 0 .5-.2.5-.5V3c0-.3-.2-.5-.5-.5h-.5zm-4 0c-.3 0-.5.2-.5.5v15c0 .3.2.5.5.5h.5c.3 0 .5-.2.5-.5V3c0-.3-.2-.5-.5-.5h-.5zm-4 0c-.3 0-.5.2-.5.5v18c0 .3.2.5.5.5h.5c.3 0 .5-.2.5-.5V3c0-.3-.2-.5-.5-.5h-.5z"/></svg></a>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+<script src="popup.js">
+
+
+</script>
+
+</html>

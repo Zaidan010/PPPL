@@ -1,0 +1,28 @@
+# =========================
+# Node & PostCSS project
+# =========================
+
+# Node dependencies
+node_modules/
+
+# Build output (PostCSS, Tailwind, etc)
+dist/
+
+# Optional: jika kamu build ke file output.css di root
+output.css
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Environment files (jika nanti ada)
+.env
+.env.local
+
+# System files
+.DS_Store
+Thumbs.db
+
+# VSCode editor folder
+.vscode/
