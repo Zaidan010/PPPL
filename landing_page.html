@@ -26,7 +26,7 @@
       <div class="flex items-center space-x-2">
         <div class="bg-cs-purple text-white text-2xl font-bold px-2 py-1 rounded-md shadow-md">CS</div>
       </div>
-
+<!-- Navbar desktop -->
       <nav class="relative">
     <div class="hidden lg:flex flex-wrap justify-start gap-4">
         <button class="bg-white text-gray-700 text-sm font-semibold px-4 py-2 rounded-lg border border-gray-300 shadow-sm transition duration-300 hover:bg-black hover:text-white hover:shadow-lg">Anime</button>
@@ -34,7 +34,7 @@
         <button class="bg-white text-gray-700 text-sm font-semibold px-4 py-2 rounded-lg border border-gray-300 shadow-sm transition duration-300 hover:bg-black hover:text-white hover:shadow-lg">Geek</button>
         <button class="bg-white text-gray-700 text-sm font-semibold px-4 py-2 rounded-lg border border-gray-300 shadow-sm transition duration-300 hover:bg-black hover:text-white hover:shadow-lg">Event</button>
     </div>
-
+<!-- Hamburger Menu -->
     <div class="flex lg:hidden justify-end">
         <button id="mobile-menu-button" class="p-2 text-gray-700 border border-gray-300 rounded-lg hover:bg-gray-100 focus:outline-none">
             <svg id="menu-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -46,6 +46,7 @@
         </button>
     </div>
 
+<!-- Navbar responsive -->
     <div id="mobile-menu-dropdown" class="hidden lg:hidden absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-200">
         <a href="#" class="block px-4 py-2 text-sm text-gray-700 font-bold hover:bg-gray-500 hover:text-white hover:font-bold">Anime</a>
         <a href="#" class="block px-4 py-2 text-sm text-gray-700 font-bold hover:bg-gray-500 hover:text-white hover:font-bold">Game</a>
@@ -61,7 +62,7 @@
         <main class="mt-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
             
             <section class="lg:col-span-2 space-y-8">
-                
+                <!-- Event dan Foto Event -->
                 <div class="relative bg-white rounded-lg shadow-xl overflow-hidden">
                     <img src="https://images.unsplash.com/photo-1517457375865-9a67a0da7478?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Event CleanSound" class="w-full h-64 md:h-96 object-cover">
                     <div class="absolute bottom-0 left-0 bg-transparent p-3 m-3 md:p-4 md:m-4 rounded-md text-white">
@@ -72,9 +73,9 @@
                         <p class="text-xs md:text-sm text-gray-200">Lorem ipsum</p>
                     </div>
                 </div>
-
+<!-- Grid Lagu dan Video -->
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 bg-white">
-    
+    <!-- Grid Video Youtube -->
                 <div class="md:col-span-2 bg-white rounded-lg shadow-lg overflow-hidden border-4 ">
                     <div class="relative pt-[56.25%]"> <iframe
                             class="absolute top-0 left-0 w-full h-full rounded-md"
@@ -98,7 +99,7 @@
             </div>
 
             </section>
-
+<!-- Grid Rekomendasi Lagu -->
      <aside class="lg:col-span-1 bg-transparent border-solid rounded-md p-6 border-gray-300 shadow-xl">
         <h3 class="text-xl font-bold text-gray-800 mb-4">Top 5 Music of The Month</h3>
         <p class="text-sm text-gray-500 mb-4">Lagu di community CleanSound</p>
@@ -174,12 +175,10 @@
         <a href="LINK_PLAYLIST_SPOTIFY" target="_blank" class="text-green-500 font-semibold hover:underline">spotify</a>
     </p>
 </aside>
-            
-        </main>
-        
-        
-
+            <!-- Fitur Rekomendasi -->
+    </main>
         <section class="mt-12 space-y-12">
+            <!-- Latest Anime -->
             <div id="latest-anime">
                 <h2 class="text-2xl font-bold mb-6 text-gray-800">Latest Anime</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -189,31 +188,32 @@
                 </div>
                 <div class="text-right mt-3 text-sm"><a href="#" class="text-gray-500 hover:text-black border-b border-gray-400">Read more</a></div>
             </div>
+
+            <!-- Latest Game -->
             <div id="latest-game">
                 <h2 class="text-2xl font-bold mb-6 text-gray-800">Latest Game</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden"><div class="relative h-48 bg-gray-200"><img src="kowata_makoto.jpg" alt="Game Image 2" class="w-full h-full object-cover"><a href=""><div class="absolute bottom-0 left-0 bg-black bg-opacity-10 text-white p-2 rounded-md w-full hover:h-3/4"><div class="flex flex-col"><span class="text-xs font-bold bg-blue-500 text-white px-2 py-1 rounded-full w-fit mb-1">ANIME</span><span class="font-semibold text-black">Judul Berita</span></div></div></div><div class="p-4"><p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div></div></a>
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden"><div class="relative h-48 bg-gray-200"><img src="kowata_makoto.jpg" alt="Game Image 2" class="w-full h-full object-cover"><a href=""><div class="absolute bottom-0 left-0 bg-black bg-opacity-10 text-white p-2 rounded-md w-full hover:h-3/4"><div class="flex flex-col"><span class="text-xs font-bold bg-blue-500 text-white px-2 py-1 rounded-full w-fit mb-1">ANIME</span><span class="font-semibold text-black">Judul Berita</span></div></div></div><div class="p-4"><p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div></div></a>
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden"><div class="relative h-48 bg-gray-200"><img src="kowata_makoto.jpg" alt="Game Image 2" class="w-full h-full object-cover"><a href=""><div class="absolute bottom-0 left-0 bg-black bg-opacity-10 text-white p-2 rounded-md w-full hover:h-3/4"><div class="flex flex-col"><span class="text-xs font-bold bg-blue-500 text-white px-2 py-1 rounded-full w-fit mb-1">ANIME</span><span class="font-semibold text-black">Judul Berita</span></div></div></div><div class="p-4"><p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div></div></a>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden"><div class="relative h-48 bg-gray-200"><img src="kowata_makoto.jpg" alt="Game Image 2" class="w-full h-full object-cover"><a href=""><div class="absolute bottom-0 left-0 bg-black bg-opacity-10 text-white p-2 rounded-md w-full hover:h-3/4"><div class="flex flex-col"><span class="text-xs font-bold bg-blue-500 text-white px-2 py-1 rounded-full w-fit mb-1">GAME</span><span class="font-semibold text-black">Judul Berita</span></div></div></div><div class="p-4"><p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div></div></a>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden"><div class="relative h-48 bg-gray-200"><img src="kowata_makoto.jpg" alt="Game Image 2" class="w-full h-full object-cover"><a href=""><div class="absolute bottom-0 left-0 bg-black bg-opacity-10 text-white p-2 rounded-md w-full hover:h-3/4"><div class="flex flex-col"><span class="text-xs font-bold bg-blue-500 text-white px-2 py-1 rounded-full w-fit mb-1">GAME</span><span class="font-semibold text-black">Judul Berita</span></div></div></div><div class="p-4"><p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div></div></a>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden"><div class="relative h-48 bg-gray-200"><img src="kowata_makoto.jpg" alt="Game Image 2" class="w-full h-full object-cover"><a href=""><div class="absolute bottom-0 left-0 bg-black bg-opacity-10 text-white p-2 rounded-md w-full hover:h-3/4"><div class="flex flex-col"><span class="text-xs font-bold bg-blue-500 text-white px-2 py-1 rounded-full w-fit mb-1">GAME</span><span class="font-semibold text-black">Judul Berita</span></div></div></div><div class="p-4"><p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div></div></a>
                 </div>
                 <div class="text-right mt-3 text-sm"><a href="#" class="text-gray-500 hover:text-black border-b border-gray-400">Read more</a></div>
             </div>
+
+            <!-- Latest Geek -->
             <div id="latest-geek">
                 <h2 class="text-2xl font-bold mb-6 text-gray-800">Latest Game</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden"><div class="relative h-48 bg-gray-200"><img src="kowata_makoto.jpg" alt="Game Image 2" class="w-full h-full object-cover"><a href=""><div class="absolute bottom-0 left-0 bg-black bg-opacity-10 text-white p-2 rounded-md w-full hover:h-3/4"><div class="flex flex-col"><span class="text-xs font-bold bg-green-500 text-white px-2 py-1 rounded-full w-fit mb-1">ANIME</span><span class="font-semibold text-black">Judul Berita</span></div></div></div><div class="p-4"><p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div></div></a>
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden"><div class="relative h-48 bg-gray-200"><img src="kowata_makoto.jpg" alt="Game Image 2" class="w-full h-full object-cover"><a href=""><div class="absolute bottom-0 left-0 bg-black bg-opacity-10 text-white p-2 rounded-md w-full hover:h-3/4"><div class="flex flex-col"><span class="text-xs font-bold bg-green-500 text-white px-2 py-1 rounded-full w-fit mb-1">ANIME</span><span class="font-semibold text-black">Judul Berita</span></div></div></div><div class="p-4"><p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div></div></a>
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden"><div class="relative h-48 bg-gray-200"><img src="kowata_makoto.jpg" alt="Game Image 2" class="w-full h-full object-cover"><a href=""><div class="absolute bottom-0 left-0 bg-black bg-opacity-10 text-white p-2 rounded-md w-full hover:h-3/4"><div class="flex flex-col"><span class="text-xs font-bold bg-green-500 text-white px-2 py-1 rounded-full w-fit mb-1">ANIME</span><span class="font-semibold text-black">Judul Berita</span></div></div></div><div class="p-4"><p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div></div></a>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden"><div class="relative h-48 bg-gray-200"><img src="kowata_makoto.jpg" alt="Game Image 2" class="w-full h-full object-cover"><a href=""><div class="absolute bottom-0 left-0 bg-black bg-opacity-10 text-white p-2 rounded-md w-full hover:h-3/4"><div class="flex flex-col"><span class="text-xs font-bold bg-green-500 text-white px-2 py-1 rounded-full w-fit mb-1">GEEK</span><span class="font-semibold text-black">Judul Berita</span></div></div></div><div class="p-4"><p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div></div></a>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden"><div class="relative h-48 bg-gray-200"><img src="kowata_makoto.jpg" alt="Game Image 2" class="w-full h-full object-cover"><a href=""><div class="absolute bottom-0 left-0 bg-black bg-opacity-10 text-white p-2 rounded-md w-full hover:h-3/4"><div class="flex flex-col"><span class="text-xs font-bold bg-green-500 text-white px-2 py-1 rounded-full w-fit mb-1">GEEK</span><span class="font-semibold text-black">Judul Berita</span></div></div></div><div class="p-4"><p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div></div></a>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden"><div class="relative h-48 bg-gray-200"><img src="kowata_makoto.jpg" alt="Game Image 2" class="w-full h-full object-cover"><a href=""><div class="absolute bottom-0 left-0 bg-black bg-opacity-10 text-white p-2 rounded-md w-full hover:h-3/4"><div class="flex flex-col"><span class="text-xs font-bold bg-green-500 text-white px-2 py-1 rounded-full w-fit mb-1">GEEK</span><span class="font-semibold text-black">Judul Berita</span></div></div></div><div class="p-4"><p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div></div></a>
                 </div>
                 <div class="text-right mt-3 text-sm"><a href="#" class="text-gray-500 hover:text-black border-b border-gray-400">Read more</a></div>
             </div>
-
-          
         </section>
-
     </div> 
     ---
-
+<!-- Footer -->
     <footer class="bg-black text-white mt-12 py-8">
         <div class="max-w-6xl mx-auto px-4 md:px-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             
